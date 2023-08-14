@@ -34,7 +34,10 @@ class _FavoriteListScreenState extends ConsumerState<PlacesListScreen> {
           )
         ],
       ),
-      body: PlacesList(places: favPlacesList),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: PlacesList(places: favPlacesList),
+      ),
     );
   }
 }
